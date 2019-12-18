@@ -36,8 +36,9 @@
         <h2> PLAYER 1: 
           <h2 id="pontosPlayer1" class="pontos"> 0 </h2>
         </h2>
-      </section>
-      <section>
+      </section  >
+      <section class="flex centraliza">
+        <button id="btnRestart" onclick="limpaTabuleiro()" >JOGAR NOVAMENTE</button>
       </section>
       <section class="flex centraliza">
         <h2 > PLAYER 2: 
@@ -47,71 +48,73 @@
     </header>
     <section class="flex centraliza" id="central">
       <section id="player1" class="flex centraliza coluna">
+        <h1 id="mensagem"></h1>
         <span id="nomePlayer1">Nome personagem </span>
-        <table class="imagemPlayer">
+        <table  class="imagemPlayer">
           <tr>
-            <td>
+            <td id="imagemPlayer1">
               <figure>
-                <img src="imagens/xis.svg">
+                <img  src="imagens/fundo.png">
               </figure>
             </td>
           </tr>
         </table>
       </section>
       <div id="tabuleiro">
-        <div id="quad1" class="flex centraliza" onclick="1">
-          <figure>
-            <img src="imagens/circulo.svg">
+        <div id="q1" class="flex centraliza" onclick="jogada(1)"  >
+          <figure class="flex centraliza">
+            <img id="quad1" src="imagens/fundo.png">
           </figure>
         </div>
-        <div id="quad2" class="flex centraliza" onclick="2">
-          <figure>
-            <img src="imagens/circulo.svg">
+        <div id="q2" class="flex centraliza" onclick="jogada(2)"  >
+          <figure class="flex centraliza">
+            <img id="quad2" src="imagens/fundo.png">
           </figure>
         </div>
-        <div id="quad3" class="flex centraliza" onclick="3">
-          <figure>
-            <img src="imagens/circulo.svg">
+        <div id="q3" class="flex centraliza" onclick="jogada(3)"  >
+          <figure class="flex centraliza">
+            <img id="quad3" src="imagens/fundo.png">
           </figure>
         </div>
-        <div id="quad4" class="flex centraliza" onclick="4">
-          <figure>
-            <img src="imagens/circulo.svg">
+        <div id="q4" class="flex centraliza" onclick="jogada(4)"  >
+          <figure class="flex centraliza">
+            <img id="quad4" src="imagens/fundo.png">
           </figure>
         </div>
-        <div id="quad5" class="flex centraliza" onclick="5">
-          <figure>
-            <img src="imagens/circulo.svg">
+        <div id="q5" class="flex centraliza" onclick="jogada(5)"  >
+          <figure class="flex centraliza">
+            <img id="quad5" src="imagens/fundo.png">
           </figure>
         </div>
-        <div id="quad6" class="flex centraliza" onclick="6">
-          <figure>
-            <img src="imagens/circulo.svg">
+        <div id="q6" class="flex centraliza" onclick="jogada(6)"  >
+          <figure class="flex centraliza">
+            <img id="quad6" src="imagens/fundo.png">
           </figure>
         </div>
-        <div id="quad7" class="flex centraliza" onclick="7">
-          <figure>
-            <img src="imagens/circulo.svg">
+        <div id="q7" class="flex centraliza" onclick="jogada(7)"  >
+          <figure class="flex centraliza">
+            <img id="quad7" src="imagens/fundo.png">
           </figure>
         </div>
-        <div id="quad8" class="flex centraliza" onclick="8">
-          <figure>
-            <img src="imagens/circulo.svg">
+        <div id="q8" class="flex centraliza" onclick="jogada(8)"  >
+          <figure class="flex centraliza">
+            <img id="quad8" src="imagens/fundo.png">
           </figure>
         </div>
-        <div id="quad9" class="flex centraliza" onclick="9">
-          <figure>
-            <img src="imagens/circulo.svg">
+        <div id="q9" class="flex centraliza" onclick="jogada(9)"  >
+          <figure class="flex centraliza">
+            <img id="quad9" src="imagens/fundo.png">
           </figure>
         </div>
       </div>
       <section id="player2" class="flex centraliza coluna">
+        <h1 id="mensagem2"></h1>
         <span id="nomePlayer1">Nome personagem </span>
-        <table class="imagemPlayer">
+        <table  class="imagemPlayer">
           <tr>
-            <td>
+            <td id="imagemPlayer2">
               <figure>
-                <img src="imagens/xis.svg">
+                <img id="quad9" src="imagens/fundo.png">
               </figure>
             </td>
           </tr>

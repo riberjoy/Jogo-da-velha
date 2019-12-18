@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="js/script.js"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <title>Jogo da Velha</title>
+</head>
+
+<body>
+  <header id="topo" class="flex">
+    <figure>
+      <img id="logo" src="imagens/Courage_the_Cowardly_Dog_logo.svg" alt="Coragem o cão covarde">
+    </figure>
+    <h1 class="flex centraliza">Jogo da Velha</h1>
+    <nav class="flex centraliza ">
+      <ul class="flex centraliza ">
+        <li><a>2 PLAYERS</a></li>
+        <li><a>1 PLAYER</a>
+          <ul>
+            <span>Oponentes </span>
+            <li>Muriel</li>
+            <hr>
+            <li>Eustácio</li>
+            <hr>
+            <li>Coragem</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <header id="topoSection" class="flex ">
+      <section class="flex centraliza">
+        <h2> PLAYER 1: 
+          <h2 id="pontosPlayer1" class="pontos"> 0 </h2>
+        </h2>
+      </section>
+      <section>
+      </section>
+      <section class="flex centraliza">
+        <h2 > PLAYER 2: 
+          <h2 id="pontosPlayer2" class="pontos"> 0 </h2>
+        </h2>
+      </section>
+    </header>
+    <section class="flex centraliza" id="central">
+      <section id="player1" class="flex centraliza coluna">
+        <span id="nomePlayer1">Nome personagem </span>
+        <table class="imagemPlayer">
+          <tr>
+            <td>
+              <figure>
+                <img src="imagens/xis.svg">
+              </figure>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <div id="tabuleiro">
+        <div id="quad1" class="flex centraliza" onclick="1">
+          <figure>
+            <img src="imagens/circulo.svg">
+          </figure>
+        </div>
+        <div id="quad2" class="flex centraliza" onclick="2">
+          <figure>
+            <img src="imagens/circulo.svg">
+          </figure>
+        </div>
+        <div id="quad3" class="flex centraliza" onclick="3">
+          <figure>
+            <img src="imagens/circulo.svg">
+          </figure>
+        </div>
+        <div id="quad4" class="flex centraliza" onclick="4">
+          <figure>
+            <img src="imagens/circulo.svg">
+          </figure>
+        </div>
+        <div id="quad5" class="flex centraliza" onclick="5">
+          <figure>
+            <img src="imagens/circulo.svg">
+          </figure>
+        </div>
+        <div id="quad6" class="flex centraliza" onclick="6">
+          <figure>
+            <img src="imagens/circulo.svg">
+          </figure>
+        </div>
+        <div id="quad7" class="flex centraliza" onclick="7">
+          <figure>
+            <img src="imagens/circulo.svg">
+          </figure>
+        </div>
+        <div id="quad8" class="flex centraliza" onclick="8">
+          <figure>
+            <img src="imagens/circulo.svg">
+          </figure>
+        </div>
+        <div id="quad9" class="flex centraliza" onclick="9">
+          <figure>
+            <img src="imagens/circulo.svg">
+          </figure>
+        </div>
+      </div>
+      <section id="player2" class="flex centraliza coluna">
+        <span id="nomePlayer1">Nome personagem </span>
+        <table class="imagemPlayer">
+          <tr>
+            <td>
+              <figure>
+                <img src="imagens/xis.svg">
+              </figure>
+            </td>
+          </tr>
+        </table>
+      </section>
+    </section>
+  </section>
+  <footer>
+
+  </footer>
+</body>
+
+</html>

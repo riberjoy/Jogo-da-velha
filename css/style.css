@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lakki+Reddy&display=swap');
+
+body{
+    background: url("../imagens/background.jpg") no-repeat;
+    background-position: fixed;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lakki Reddy', cursive;
+}
+
+.flex{
+    display: flex;
+}
+
+.textoCentralizado{
+   text-align: center;
+}
+
+.coluna{
+    flex-direction: column;
+}
+.centraliza{
+    align-items: center;
+    justify-content: center;
+}
+
+#topo{
+    display:grid;
+    grid-template-columns: 4fr 8fr 4fr;
+    grid-template-rows: 14vh;
+}
+
+h1 {
+    color: #DB312E;
+    font-size: 45pt;
+    text-shadow: 0.1em 0.2em 0.1em black;
+    padding: 0;
+    margin: 0;
+}
+
+header figure #logo{
+    width: 180px;
+    height: 90px;
+}
+
+#topoSection{
+    display:grid;
+    grid-template-columns: 9fr 8fr 9fr;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+ul li{
+    list-style:none;
+    margin-left: 20px;
+    position:relative; 
+    color: rgb(255, 255, 255);
+    text-shadow:1px 1px 5px rgb(0, 0, 0);
+    width: 120px;
+    text-align: center;
+}
+
+ul li a{
+    display: block;
+    background-color: rgba(219, 49, 46, 0.788);
+    padding: 10px 10px  0px  10px;
+    border-radius: 5px;
+}
+ul li a:hover{
+    background-color: rgb(255, 4, 0);
+}
+
+ul li ul{
+    display: none;
+    background-color: rgba(219, 49, 46, 0.788);
+    margin-top: 1px;
+    width:120px;
+    border-radius: 5px;
+    position:absolute;
+
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+ul li ul li{
+    padding: 4px 0px  0px  0px;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+ul li ul li:hover{
+    background-color: rgb(255, 4, 0);
+}
+
+hr{
+    border:1px solid white;
+    margin: 2px 5px 2px 5px;
+}
+
+h2{
+    color: #DB312E;
+    text-shadow:1px 1px 5px rgb(255, 255, 255);
+    text-align: center;
+}
+
+#central{ 
+    display:grid;
+    grid-template-columns: 6fr 8fr 6fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td{
+    border: 2px solid white;
+}
+
+.placar{
+    margin-bottom: 100px;
+}
+
+.pontos{
+    padding: 0px 0px 0px 15px;
+    margin: 0;
+}
+.imagemPlayer{
+    width: 300px;
+    height: 200px;
+}
+
+#player1{
+    width: 100%;
+    height: 607px;
+    color: white;
+}
+
+#player2{
+    width: 100%;
+    height: 607px;
+    color: white;
+}
+
+/* *---------------------- Tabuleiro --------------------* */
+#tabuleiro{
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 606px;
+    height: 606px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:3px;
+    grid-row-gap:3px ;
+}
+
+section div div{
+    background-color: rgba(255, 212, 212, 0.39);
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+} 

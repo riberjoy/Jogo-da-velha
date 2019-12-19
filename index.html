@@ -14,34 +14,36 @@
       <img id="logo" src="imagens/Courage_the_Cowardly_Dog_logo.svg" alt="Coragem o cão covarde">
     </figure>
     <h1 class="flex centraliza">Jogo da Velha</h1>
-    <nav class="flex centraliza ">
-      <ul class="flex centraliza ">
-        <li><a>2 PLAYERS</a></li>
-        <li><a>1 PLAYER</a>
-          <ul>
-            <span>Oponentes </span>
-            <li>Muriel</li>
-            <hr>
-            <li>Eustácio</li>
-            <hr>
-            <li>Coragem</li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+    <section>
+    </section>
   </header>
   <section>
     <header id="topoSection" class="flex ">
       <section class="flex centraliza">
-        <h2> PLAYER 1: 
+        <h2> X  - PLAYER 1: 
           <h2 id="pontosPlayer1" class="pontos"> 0 </h2>
         </h2>
       </section  >
       <section class="flex centraliza">
         <button id="btnRestart" onclick="limpaTabuleiro()" >JOGAR NOVAMENTE</button>
+        <nav id = "menu" class="flex centraliza ">
+          <ul class="flex centraliza ">
+            <li><a onclick="selecionaPrimeiro()">INICIAR JOGOR</a></li>
+            <!-- <li><a>1 PLAYER</a>
+              <ul>
+                <span>Oponentes </span>
+                <li>Muriel</li>
+                <hr>
+                <li>Eustácio</li>
+                <hr>
+                <li>Coragem</li>
+              </ul>
+            </li> -->
+          </ul>
+        </nav>
       </section>
       <section class="flex centraliza">
-        <h2 > PLAYER 2: 
+        <h2 >O  - PLAYER 2: 
           <h2 id="pontosPlayer2" class="pontos"> 0 </h2>
         </h2>
       </section>
@@ -49,12 +51,11 @@
     <section class="flex centraliza" id="central">
       <section id="player1" class="flex centraliza coluna">
         <h1 id="mensagem"></h1>
-        <span id="nomePlayer1">Nome personagem </span>
         <table  class="imagemPlayer">
           <tr>
             <td id="imagemPlayer1">
               <figure>
-                <img  src="imagens/fundo.png">
+                <img id="person1" src="imagens/fundo.png">
               </figure>
             </td>
           </tr>
@@ -109,12 +110,11 @@
       </div>
       <section id="player2" class="flex centraliza coluna">
         <h1 id="mensagem2"></h1>
-        <span id="nomePlayer1">Nome personagem </span>
         <table  class="imagemPlayer">
           <tr>
             <td id="imagemPlayer2">
               <figure>
-                <img id="quad9" src="imagens/fundo.png">
+                <img id="person2" src="imagens/fundo.png">
               </figure>
             </td>
           </tr>

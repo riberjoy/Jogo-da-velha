@@ -83,9 +83,9 @@ ul li ul{
 
 }
 
-ul li:hover ul{
+/* ul li:hover ul{
     display: block;
-}
+} */
 
 ul li ul li{
     padding: 4px 0px  0px  0px;
@@ -160,7 +160,7 @@ td{
 }
 
 #btnRestart:active{
-    display: none;
+    display: ;
 }
 
 /* *---------------------- Tabuleiro --------------------* */
@@ -189,3 +189,7 @@ img{
     height: 200px;
     
 } 
+
+#tabuleiro, #player1, #player2{
+display: none;
+}

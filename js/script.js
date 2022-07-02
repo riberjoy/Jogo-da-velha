@@ -35,7 +35,7 @@ function escolherPersonagem(){
     var personagem1 = Math.floor(Math.random() * (9));
     var personagem = 'personagem_0'+personagem1;
     var img = document.getElementById("person1");
-    img.src = "../Jogo da velha/imagens/"+personagem+".png";
+    img.src = "../Jogo-da-velha/imagens/"+personagem+".png";
 
     do{
         var personagem2 = Math.floor(Math.random() * (9));
@@ -43,7 +43,7 @@ function escolherPersonagem(){
     
     personagem = 'personagem_0'+personagem2;
     var img = document.getElementById("person2");
-    img.src = "../Jogo da velha/imagens/"+personagem+".png";
+    img.src = "../Jogo-da-velha/imagens/"+personagem+".png";
 }
 
 function destaca(p1, p2, p3){
@@ -86,7 +86,7 @@ function limpaTabuleiro(){
     for(var i=0; i<9;i++){
         var aux = 'quad'+(i+1);
         var img = document.getElementById(aux);
-        img.src = "../Jogo da velha/imagens/fundo.png";
+        img.src = "../Jogo-da-velha/imagens/fundo.png";
         tabuleiro[i]=0;   
     }
     vencedor = false;
@@ -145,7 +145,7 @@ function jogada(posi){
         var apelidoTag = 'quad'+posi;
         if(player1 == true){
             var img = document.getElementById(apelidoTag);
-            img.src = "../Jogo da velha/imagens/xis.svg";
+            img.src = "../Jogo-da-velha/imagens/xis.svg";
 
             tabuleiro[posi-1] = 1;
             document.getElementById("mensagem").innerHTML = "";
@@ -165,7 +165,7 @@ function jogada(posi){
         }else if(player2 == true){
             var img = document.createElement("IMG");
             var img = document.getElementById(apelidoTag);
-            img.src = "../Jogo da velha/imagens/circulo.svg";
+            img.src = "../Jogo-da-velha/imagens/circulo.svg";
 
             tabuleiro[posi-1] = 2;
             document.getElementById("mensagem2").innerHTML = "";

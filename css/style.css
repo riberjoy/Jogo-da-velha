@@ -2,8 +2,8 @@
 
 body{
     background: url("../imagens/background.jpg") no-repeat;
-    background-position: fixed;
-    background-size: 100%;
+    /*background-position: fixed;*/
+    background-size: 100% 100vh;
     margin: 0;
     padding: 0;
     font-family: 'Lakki Reddy', cursive;
@@ -33,15 +33,19 @@ body{
 
 h1 {
     color: #DB312E;
-    font-size: 45pt;
+    font-size: 40pt;
     text-shadow: 0.1em 0.2em 0.1em black;
-    padding: 0;
-    margin: 0;
+    padding: 10px 0 0 0;
+    margin: auto 0;
+}
+
+h1#mensagem2, h1#mensagem {
+    font-size: 20pt;
 }
 
 header figure #logo{
-    width: 180px;
-    height: 90px;
+    width: 70%;
+    height: 100%;
 }
 
 #topoSection{
@@ -110,11 +114,12 @@ h2{
 }
 
 #central{ 
-    display:grid;
-    grid-template-columns: 6fr 8fr 6fr;
+    /*display:grid;
+    grid-template-columns: 6fr 8fr 6fr;*/
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 60vh;
 }
 
 td{
@@ -130,19 +135,19 @@ td{
     margin: 0;
 }
 .imagemPlayer{
-    width: 300px;
-    height: 200px;
+    width: 35%;
+    height: 35%;
 }
 
 #player1{
-    width: 100%;
-    height: 607px;
+    width: 25%;
+   /* height: 607px;*/
     color: white;
 }
 
 #player2{
-    width: 100%;
-    height: 607px;
+    width: 25%;
+    /*height: 607px;*/
     color: white;
 }
 
@@ -160,24 +165,24 @@ td{
 }
 
 #btnRestart:active{
-    display: ;
+   /* display: ;*/
 }
 
 /* *---------------------- Tabuleiro --------------------* */
 #tabuleiro{
     background-color: rgba(0, 0, 0, 0.342);
-    width: 606px;
-    height: 606px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap:3px;
-    grid-row-gap:3px ;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 50%;
+    height: 100%;
 }
 
 section div div{
     background-color: rgba(255, 212, 212, 0.39);
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
@@ -185,9 +190,8 @@ section div div{
 img{
     padding: 10px;
     margin: 0;
-    width: 200px;
-    height: 200px;
-    
+    width: 50px;
+    height: 70px;   
 } 
 
 #tabuleiro, #player1, #player2{
